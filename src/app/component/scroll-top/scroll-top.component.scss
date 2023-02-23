@@ -1,0 +1,36 @@
+.scrollbtn{
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+
+}
+.scrollbtn .btn{
+  border-radius: 20%;
+}
+.fa-arrow-alt-circle-up{
+  color: white;
+  font-size: 25px;
+
+}
+
+.cogs_shop{
+  position: fixed;
+  right: 0;
+  top: 250px;
+  border-radius: 5px 0px 0px 5px;
+
+}
+.cogs_shop a{
+  text-decoration: none;
+}
+.cogs_shop i{
+  display: block;
+  color: white ;
+  font-size: 20px;
+}
+
+.btn-info{
+  background-color: transparent;
+  border-color: transparent;
+
+}

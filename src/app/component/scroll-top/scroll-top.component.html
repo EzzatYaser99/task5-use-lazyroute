@@ -1,0 +1,11 @@
+<div class="cogs_shop bg-dark" *ngIf="ScrollIconData">
+  <a *ngFor="let item of ScrollIconData" [routerLink]="item.herf"><i class="pi {{item.icon}} p-2 mt-1"></i></a>
+</div>
+<div class="scrollbtn" >
+  <button class=" btn btn-info " #myBtn (click)="topFunction($event,myBtn) ">
+    <i class="fas fa-arrow-alt-circle-up py-3 "></i>
+  </button>
+</div>
+
+
+

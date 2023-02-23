@@ -1,0 +1,36 @@
+<section>
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="contentOne col-xl-4 col-md-12">
+        <h1>About us</h1>
+        <p>Iam text block.Click edit button to change this text.  Lorem ipsum dolor sit amet, consectetur.  I am text block.  Click edit button to change this text.  Lorem ipsum dolor sit amet, consectetur We are the champions! We are the most amazing theme of all time, yeah.</p>
+      </div>
+      <div class="contentOne col-xl-4 col-md-12">
+        <h1>Opening Hours</h1>
+        <ul>
+          <li  *ngFor="let item of footerOpenDays">{{item.openDays}}<div class="line"></div></li>
+        </ul>
+      </div>
+      <div class="contentOne col-xl-4 col-md-12">
+        <h1>Contact Details</h1>
+        <ul class="last">
+          <li *ngFor="let item of footerContactDetails"><i class="fas {{item.contactDetailsIcon}}"></i>
+            {{item.contactDetailsCommand}}<div class="line"></div>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contentTwo col-xl-12 col-md-12">
+        <p>copyright 2023 ,All Rright reserved NTGApps</p>
+      </div>
+
+      <div class="contentTwo col-xl-12 col-md-12 " *ngIf="footerSocialData">
+        <a *ngFor="let item of footerSocialData" href="#">
+          <i *ngIf="item.socialMediaIcon" class="fab {{item.socialMediaIcon}}"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</section>
